@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+	<head>
+		<title> 
+			Rock-Paper-Scissors 
+		</title>
+		<style>
+			body{ font-family: arial;
+			}
+			.heading{ font-weight: bold;
+			text-align: center;
+			font-size: 30px;
+			padding: 3rem;
+			border-radius: 10px;
+			background-color: rgb(165, 126, 42);
+			}
+	
+
+		</style>
+
+	</head>
+	    
+	<body> 
+		<p class="heading"> Rock Paper Scissors</p>
+		<button onclick=" pickComputerMove();
+
+		 var result = '';
+
+		if(computerMove === 'Rock') {
+			result = 'Tie.';
+
+		}else if(computerMove === 'Paper') {
+			result = 'Nah! You Lose.';
+
+		}else if(computerMove === 'Scissors') { 
+			result = 'Yay! You win.';
+
+		}
+
+		alert(`You picked Rock.\nComputer picked ${computerMove}.\n${result}`);
+			
+		">Rock</button>
+	
+		<button onclick="pickComputerMove();
+		var result = '';
+
+		if(computerMove === 'Paper'){
+			result = 'Tie.';
+
+		}else if (computerMove === 'Scissors'){
+			result = 'You Lose.';
+
+		}else if (computerMove === 'Rock'){ 
+			result = 'You Win.';
+
+		}
+
+		alert(`You picked Paper.\nComputer picked ${computerMove}.\n${result}`);
+		
+		">Paper</button>
+
+		<button onclick="pickComputerMove();
+		
+		var result = '';
+
+		if(computerMove === 'Scissors'){
+			result = 'Tie.';
+
+		}else if (computerMove === 'Rock'){
+			result = 'You Lose.';
+
+		}else if (computerMove === 'Paper'){ 
+			result = 'You win.';
+
+		}
+
+		alert(`You picked Scissors.\nComputer picked ${computerMove}.\n${result}`);
+		">Scissors</button>
+		
+		<script> 
+        let computerMove = '';
+	    function pickComputerMove(){
+
+		const randomNumber = Math.random();
+		
+	
+		if (randomNumber >= 0 && randomNumber <
+		1 / 3) {
+			computerMove = 'Rock';
+		} else if (randomNumber >= 1/3 && randomNumber <2 / 3) {
+			computerMove = 'Paper';
+		} else if (randomNumber >= 2/3 && randomNumber <1) {
+			computerMove = 'Scissors'
+		}
+		}
+	</script>
+	</body>
+</html>
